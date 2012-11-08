@@ -6,8 +6,15 @@ Initial proposed draft specification
 Core Properties
 ---------------
 
-**Global Unique Identifier (GUID)**
+Each facility must contain the following core properties.
 
+Name
+~~~~
+
+Name of the facility.
+
+Global Unique Identifier (GUID)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A URL call back to the facility’s global unique identifier (GUID) in the facility registry.
 
@@ -28,7 +35,8 @@ Discussed but left to specific implementations:
 - be a GUID
 - have numeric spacing
 
-**External Facility Identifiers/Codes**
+External Facility Identifiers/Codes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The services provides the ability to map to external IDs used by different agencies.
 
@@ -48,8 +56,7 @@ context = context/external system in which the agency is using the ID.  eg) HMIS
 
 .. code-block:: javascript
 
-  {
-    “FOSAID”: 
+  “FOSAID”: {
     “id”: 1234,
     “identifier”: “yes”,
     “agency”: “moh”,
@@ -57,20 +64,21 @@ context = context/external system in which the agency is using the ID.  eg) HMIS
   }
 
 
-**Name**
-
-Name of the facility.
-
-**Geolocation**
+Geolocation
+~~~~~~~~~~~
 
 Each facility can have it’s location represented by an optional GPS point represented in decimal degrees.
 
 *XML*
-::
+
+.. code-block:: xml
+
   <geopoint:latitude>-1.69172</geopoint:latitude> 
   <geopoint:longitude>29.52505</geopoint:longitude> 
 
-**Created At**
+
+Created At
+~~~~~~~~~~
 
 Timestamp of when the facility was created.
 
@@ -78,10 +86,10 @@ Use ISO 8601 format.
 ::
   2011-11-16T14:26:15Z
 
-**Updated At**
+Updated At
+~~~~~~~~~~
 
 Timestamp of when the facility was last updated.
-
 
 
 JSON Facilities Representation

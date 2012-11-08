@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http:www.openfacility.org/v1.0 facility.xsd"
+ xmlns="http:www.openfacility.org/v1.0"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+  
+  <!--
+       core elements
+ -->
+
+  <name>Birembo</name> <!-- mandatory -->
+  <url>http://facilities.moh.gov.rw/api/sites/50181.rss</url> <!-- mandatory -->
+  <identities> <!-- mandatory -->
+    <guid>http://facilities.moh.gov.rw/api/sites/50181.rss</guid> <!-- mandatory -->
+    <identity agency="MOH" context="HMIS" id="ffghf5fghf5" /> <!-- optional -->
+    <identity agency="MOH" context="HR" id="567" /> <!-- optional -->
+    <identity agency="MOH" context="FOSA" id="208" /> <!-- optional -->
+  </identities>
+  <active>true</active>
+  
+  <geo:lat>-1.69172</geo:lat> <!-- mandatory -->
+  <geo:long>29.52505</geo:long> <!-- mandatory -->
+
+  <approvalDate>2009-01-01</approvalDate> <!-- optional -->
+  
+  <link name="resources" url="http://resources.moh.gov.za/resource/208" />
+  <link name="providers" url="http://providers.moh.gov.za/providers?fosaid=208" />
+  
+  <!--
+   Taking lead from rss spec, any other elements allowed here which are not
+   in either the default namespace or "facility" namespace
+ -->
+  
+  <rm:properties xmlns:rm="http://resourcemap.instedd.org/api/1.0">
+    <rm:type>CS</rm:type>
+    <rm:adminunit>030409</rm:adminunit>
+    <rm:categoryCode>public</rm:categoryCode>
+    <rm:targetPopulation>13671</rm:targetPopulation>
+    <rm:yearPopulationEstimate>2002</rm:yearPopulationEstimate>
+    <rm:sourcePopulation>National Census</rm:sourcePopulation>
+  </rm:properties>
+
+</facility>

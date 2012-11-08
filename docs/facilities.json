@@ -1,0 +1,30 @@
+{
+    "type": "Feature",
+    "geometry": null,
+    "properties""features""type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry""type": "Point",
+            "coordinates": [
+                26.925865,
+                9.841262
+            ]
+        },
+        "id": 89457,
+        "properties""name": "AAAAAAA",
+        "createdAt": "2012-09-18T14:45:49-05:00",
+        "updatedAt": "2012-10-16T14:37:43-05:00",
+        "properties""type": "HD",
+        "network": "2117602650",
+        "categoryCode": "2117602681",
+        "statusCode": "2117602678",
+        "provinceCode": "01",
+        "districtCode": "0101",
+        "sectorCode": "020110",
+        "numberRefrigerators": "OUI",
+        "numberComputers": "OUI",
+        "boss": "13120",
+        "admin2": "01"
+    }
+}

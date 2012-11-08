@@ -39,17 +39,21 @@ agency = agency who created the code.  ex) ministry of health, UNICEF, etc.
 context = context/external system in which the agency is using the ID.  eg) HMIS, DHIS2, HR
 
 *XML*
-::
+
+.. code-block:: xml
+
   <FOSAID  identifier=”yes” agency=”moh” context =”fosa”>1234</FOSAID>
 
 *JSON*
-::
+
+.. code-block:: javascript
+
   {
     “FOSAID”: 
     “id”: 1234,
     “identifier”: “yes”,
     “agency”: “moh”,
-   “context: “fosa”
+    “context: “fosa”
   }
 
 

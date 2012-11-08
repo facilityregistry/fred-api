@@ -30,10 +30,13 @@ Must:
 - The system will generate system identifiers when creating resources
 - The system will not return the same system identifier twice when creating two resources
 
-Discussed but left to specific implementations:
-- be nicely url encoded
-- be a GUID
-- have numeric spacing
+.. Note::
+ 
+   Discussed but left to specific implementations:
+  
+  - be nicely url encoded
+  - be a GUID
+  - have numeric spacing
 
 External Facility Identifiers/Codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

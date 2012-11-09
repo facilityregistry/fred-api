@@ -7,7 +7,7 @@
     <facility>
       <!-- core required properties -->
         <url>http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.xml</url>
-        <facility_id>http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.xml</facility_id>  <!-- internal guid -->
+        <facility_id>0X9OCW3JMV98EYOVN32SGN4II</facility_id>  <!-- internal guid -->
         <moh_id identifier=”yes” agency=”moh” context =”dhis”>1234</moh_id> <!-- ministry of health external id used in DHIS-->
         <unicef_id identifier=”yes” agency=”unicef” context =”mtrac”>9534</unicef_id> <!-- UNICEF of health external id used in mTrac-->
 	<name>Ruhiira HC</name>
@@ -16,12 +16,12 @@
 	<updated_at>2011-11-16T14:26:15Z</updated_at>
 	<active>yes</active>
         <date_closed>2011-12-20 15:09:47</date_closed>
-	<geopoint:lat>-1.69172</geopoint:lat> 
-	<geopoint:long>29.52505</geopoint:long>
+	<geopoint:latitude>-1.69172</geopoint:latitude> 
+	<geopoint:longitude>29.52505</geopoint:longitude>
 	<!-- optional properties -->
-	<properties>
-	  <number_beds>10</number_beds>
-	  <medical_officer>Dr. Mukombo</medical_officer>
+	<rm:properties xlmns:rm="http://resourcemap.instedd.org/api/1.0>
+	  <rm:number_beds>10</rm:number_beds>
+	  <rm:medical_officer>Dr. Mukombo</rm:medical_officer>
 	  ...
 	</properties>
    </facility>

@@ -54,15 +54,15 @@ The services provides the ability to map to external IDs used by different agenc
 
 Each identifier consists of the following components:
 
-id = ID code 
-agency = agency who created the code.  ex) ministry of health, UNICEF, etc.
-context = context/external system in which the agency is using the ID.  eg) HMIS, DHIS2, HR
+- identifier: yes - indicates that the ID is an identifier 
+- agency: agency who created the code.  ex) ministry of health, UNICEF, etc.
+- context: context/external system in which the agency is using the ID.  eg) HMIS, DHIS2, HR
 
 *XML*
 
 .. code-block:: xml
 
-  <FOSAID  identifier=”yes” agency=”moh” context =”fosa”>1234</FOSAID>
+  <moh_id  identifier=”yes” agency=”moh” context =”fosa”>1234</moh_id>
 
 *JSON*
 

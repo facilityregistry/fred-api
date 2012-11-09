@@ -7,7 +7,7 @@
 <facilities>
     <facility>
       <!-- core required properties -->
-        <url>http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.xml</url>
+        <url>http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II</url>
         <id>0X9OCW3JMV98EYOVN32SGN4II</id>  <!-- internal guid -->
         <moh_id identifier=”yes” agency=”moh” context =”dhis”>1234</moh_id> <!-- ministry of health external id used in DHIS-->
         <unicef_id identifier=”yes” agency=”unicef” context =”mtrac”>9534</unicef_id> <!-- UNICEF of health external id used in mTrac-->

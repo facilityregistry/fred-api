@@ -10,8 +10,8 @@
       <!-- core required properties -->
         <url>http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II</url>
         <id>0X9OCW3JMV98EYOVN32SGN4II</id>  <!-- internal guid -->
-        <moh_id identifier=”yes” agency=”moh” context =”dhis”>1234</moh_id> <!-- ministry of health external id used in DHIS-->
-        <unicef_id identifier=”yes” agency=”unicef” context =”mtrac”>9534</unicef_id> <!-- UNICEF of health external id used in mTrac-->
+        <moh_id identifier=”yes” agency=”moh” context =”dhis”>1234</moh_id> <!-- ministry of health DHIS-->
+        <unicef_id identifier=”yes” agency=”unicef” context =”mtrac”>9534</unicef_id> <!-- UNICEF mTrac ID-->
 	<name>Ruhiira HC</name>
         <active>yes</active>
 	<created_at>2011-11-16T14:26:15Z</created_at>

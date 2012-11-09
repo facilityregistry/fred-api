@@ -1,30 +1,19 @@
 {
-    "type": "Feature",
-    "geometry": null,
-    "properties""features""type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "geometry""type": "Point",
-            "coordinates": [
-                26.925865,
-                9.841262
-            ]
-        },
-        "id": 89457,
-        "properties""name": "AAAAAAA",
-        "createdAt": "2012-09-18T14:45:49-05:00",
-        "updatedAt": "2012-10-16T14:37:43-05:00",
-        "properties""type": "HD",
-        "network": "2117602650",
-        "categoryCode": "2117602681",
-        "statusCode": "2117602678",
-        "provinceCode": "01",
-        "districtCode": "0101",
-        "sectorCode": "020110",
-        "numberRefrigerators": "OUI",
-        "numberComputers": "OUI",
-        "boss": "13120",
-        "admin2": "01"
+    "facilities": {
+        "facility": {
+            "url": "http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.xml",
+            "facility_id": "http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.xml",
+            "name": "Ruhiira HC",
+            "active": "yes",
+            "created_at": "2011-11-16T14:26:15Z",
+            "updated_at": "2011-11-16T14:26:15Z",
+            "date_closed": "2011-12-20 15:09:47",
+            "geo:lat": "-1.69172",
+            "geo:long": "29.52505",
+            "properties": {
+                "number_beds": "10",
+                "medical_officer": "Dr. Mukombo"
+            }
+        }
     }
 }

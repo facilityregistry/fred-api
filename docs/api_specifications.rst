@@ -309,7 +309,7 @@ Filter by Updated Since
 
   /facilities.json?updated_since=2012-03-23
 
-  Returns facilities updated since a particular data expressed in the `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601/>`_ format.
+Returns facilities updated since a particular data expressed in the `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601/>`_ format.
 
 Sample XML Output
 ~~~~~~~~~~~~~~~~~

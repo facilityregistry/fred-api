@@ -35,7 +35,7 @@ Must:
    Discussed but left to specific implementations:
   
   - be nicely url encoded
-  - be a GUID
+  - be a globally unique identifier
   - have numeric spacing
 
 URL
@@ -185,7 +185,7 @@ Adding / Updating Facilities
 
 **GET**: See below
 
-**DELETE**:  Delete facility.  **SUCCESS**: Returns: HTTP 200 and GUID of deleted facility
+**DELETE**:  Delete facility.  **SUCCESS**: Returns: HTTP 200 and the ID of deleted facility
 
 **PUT**: Update facility if exists, if not error.  Success: HTTP 200, XML/JSON collection
 

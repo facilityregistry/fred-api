@@ -179,7 +179,7 @@ Adding / Updating Facilities
 
 ::
 
-  /facilities/<guid>
+  /facilities/<id>
 
 **POST**:: Error, not supported
 
@@ -193,7 +193,7 @@ Individual Facility Lookup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 ::
 
-  GET /facilities/<guid>.json/xml
+  GET /facilities/<id>.json/xml
 
 Returns facility in JSON or XML.
 

@@ -17,8 +17,8 @@
 	<updated_at>2011-11-16T14:26:15Z</updated_at>
 	<active>yes</active>
         <date_closed>2011-12-20 15:09:47</date_closed>
-	<geopoint:latitude>-1.69172</geopoint:latitude> 
-	<geopoint:longitude>29.52505</geopoint:longitude>
+	<geo:lat>-1.69172</geo:long> 
+	<geo:long>29.52505</geo:long>
 	<!-- optional properties -->
 	<rm:properties xlmns:rm="http://resourcemap.instedd.org/api/1.0>
 	  <rm:number_beds>10</rm:number_beds>

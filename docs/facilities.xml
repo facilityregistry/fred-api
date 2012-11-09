@@ -2,7 +2,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <facility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http:www.openfacility.org/v1.0 facility.xsd"
- xmlns="http:www.openfacility.org/v1.0">
+ xmlns="http:www.openfacility.org/v1.0"
+ xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
  
 <facilities>
     <facility>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <?xml version="1.0" encoding="UTF-8"?>
 <facility xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http:www.openfacility.org/v1.0 facility.xsd"
@@ -7,7 +8,7 @@
     <facility>
       <!-- core required properties -->
         <url>http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.xml</url>
-        <facility_id>0X9OCW3JMV98EYOVN32SGN4II</facility_id>  <!-- internal guid -->
+        <id>0X9OCW3JMV98EYOVN32SGN4II</id>  <!-- internal guid -->
         <moh_id identifier=”yes” agency=”moh” context =”dhis”>1234</moh_id> <!-- ministry of health external id used in DHIS-->
         <unicef_id identifier=”yes” agency=”unicef” context =”mtrac”>9534</unicef_id> <!-- UNICEF of health external id used in mTrac-->
 	<name>Ruhiira HC</name>

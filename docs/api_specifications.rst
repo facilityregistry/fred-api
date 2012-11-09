@@ -27,8 +27,8 @@ Internal system id
   id: 0X9OCW3JMV98EYOVN32SGN4II
 
 Must:
-- The system will generate system identifiers when creating resources
-- The system will not return the same system identifier twice when creating two resources
+- The system will generate a unique system id when generating a facility
+- The system will not return the same system id twice when creating two facilities
 
 .. Note::
  

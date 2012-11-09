@@ -17,18 +17,13 @@ Name of the facility.
 
   name: "Ruhiira HC"
 
-Global Unique Identifier (GUID)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System ID
+~~~~~~~~~
 
-A URL call back to the facility’s global unique identifier (GUID) in the facility registry.
+Internal system id
 
-*XML*
 ::
-  <guid>http://facilities.moh.gov.rw/api/1.0/facilities/50181.xml</guid>
-
-*JSON:*
-::    
-  "guid”: “http://facilities.moh.gov.rw/api/1.0/facilities/50181.json
+  id: 0X9OCW3JMV98EYOVN32SGN4II
 
 Must:
 - The system will generate system identifiers when creating resources
@@ -41,6 +36,15 @@ Must:
   - be nicely url encoded
   - be a GUID
   - have numeric spacing
+
+URL
+~~~
+
+Link to the API resource for the facility
+
+::
+
+  <url>http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II</url>
 
 External Facility Identifiers/Codes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,11 +67,11 @@ context = context/external system in which the agency is using the ID.  eg) HMIS
 
 .. code-block:: javascript
 
-  “FOSAID”: {
+  “moh_id”: {
     “id”: 1234,
     “identifier”: “yes”,
     “agency”: “moh”,
-    “context: “fosa”
+    “context: “dhis”
   }
 
 
@@ -80,8 +84,8 @@ Each facility can have it’s location represented by an optional GPS point repr
 
 .. code-block:: xml
 
-  <geopoint:latitude>-1.69172</geopoint:latitude> 
-  <geopoint:longitude>29.52505</geopoint:longitude> 
+  <geo:lat>-1.69172</geo:lat> 
+  <geo:long>29.52505</geo:long> 
 
 
 Created At

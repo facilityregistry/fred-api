@@ -1,8 +1,8 @@
 {
     "facilities": {
         "facility": {
-            "url": "http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.xml",
-            "facility_id": "http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.xml",
+            "url": "http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.json",
+            "facility_id": "0X9OCW3JMV98EYOVN32SGN4II.json",
             "name": "Ruhiira HC",
             "active": "yes",
             "created_at": "2011-11-16T14:26:15Z",

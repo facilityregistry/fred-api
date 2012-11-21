@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the Facility Registry API documentation!
+Welcome to the Facility Registry API documentation
 =================================================
 
 The **Facility Registry API** is an attempt to create a common standard for the sharing and updating of health facility data.

@@ -1,21 +1,31 @@
 {
     "facilities": {
         "facility": {
-	    "name": "Kakamega HC",
-            "url: "http://facilityregistry.org/api/v1/facilities/0X9OCW3JMV98EYOVN32SGN4II",
+            "name": "Kakamega HC",
+            "url": "http: //facilityregistry.org/api/v1/facilities/0X9OCW3JMV98EYOVN32SGN4II",
             "id": "0X9OCW3JMV98EYOVN32SGN4II",
             "active": "True",
-            "created_at": "2011-11-16T14:26:15Z",
-            "updated_at": "2011-11-16T14:26:15Z",
-            "coordinates": [-1.6917, 29.5250],
-	    "identifiers": [
-                {agency: "MOH", context: "DHIS", id: "123"},
-        	{agency: "UNICEF", context: "mtrac", id: "53adf"},
-        	{ .... }
-  	    ], 
+            "created_at": "2011-11-16T14: 26: 15Z",
+            "updated_at": "2011-11-16T14: 26: 15Z",
+            "coordinates": [
+                -1.6917,
+                29.525
+            ],
+            "identifiers": [
+                {
+                    "agency": "MOH",
+                    "context": "DHIS",
+                    "id": "123"
+                },
+                {
+                    "agency": "UNICEF",
+                    "context": "mtrac",
+                    "id": "53adf"
+                }
+            ],
             "properties": {
                 "number_beds": "10",
-                "medical_officer": "Dr. Mukombo"
+                "medical_officer": "Dr.Mukombo"
             }
         }
     }

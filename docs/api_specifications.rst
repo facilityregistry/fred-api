@@ -96,11 +96,11 @@ Updated At
 Active
 ~~~~~~
 
-Active = yes/no indicates whether the facility is active or not.
+Active = True/False indicates whether the facility is active or not.
 
 ::
 
-  active: yes/no
+  active: "True"
 
 Authentication
 --------------
@@ -284,14 +284,6 @@ Sample JSON Output
    :language: javascript
    :linenos:
 
-
-
-Sample XML Output
-~~~~~~~~~~~~~~~~~
-
-.. literalinclude:: facilities.xml
-   :language: xml
-   :linenos:
 
 Recommended Practices
 ---------------------

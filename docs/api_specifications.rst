@@ -49,7 +49,7 @@ URL link to the unique ID API resource for the facility
 
 
 External Facility Identifiers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One of the primary functions of the facility registry is facilitate a mapping of the different IDs
 used by different agencies to represent a particular facility.
@@ -102,15 +102,12 @@ Active = True/False indicates whether the facility is active or not.
 
   active: "True"
 
-Authentication
---------------
+Implementation Specific Properties
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Will be supported initially by `HTTP Basic Authentication <http://en.wikipedia.org/wiki/Basic_access_authentication/>`_.
-
-In the future, support for `HTTP Digest Authentication <http://en.wikipedia.org/wiki/Digest_access_authentication/>`_ in addition to OAuth 2.0 will be considered.
 
 API
--------------
+---
 
 Versioning
 ~~~~~~~~~~
@@ -126,6 +123,12 @@ The major version must be exposed in the URL.  Note: the URL pattern may vary by
 
 All prior versions still supported by the code should be exposed by its own URL.
 
+Authentication
+--------------
+
+Will be supported initially by `HTTP Basic Authentication <http://en.wikipedia.org/wiki/Basic_access_authentication/>`_.
+
+In the future, support for `HTTP Digest Authentication <http://en.wikipedia.org/wiki/Digest_access_authentication/>`_ in addition to OAuth 2.0 will be considered.
 
 HTTP Responses
 ~~~~~~~~~~~~~~

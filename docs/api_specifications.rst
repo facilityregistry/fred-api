@@ -3,6 +3,11 @@ API Specifications v0.9
 
 Initial proposed draft specification
 
+Specification Notes
+-------------------
+
+The initial API implementation will support only JSON.  Once the API stabilizes, support for an XML endpoint is planned.
+
 Core Properties
 ---------------
 
@@ -41,7 +46,7 @@ URL link to the unique ID API resource for the facility
 
   <url>http://facilityregistry.org/api/v1/facilities/0X9OCW3JMV98EYOVN32SGN4II</url>
 
-External Facility Identifiers/Codes
+External Facility Identifiers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One of the primary functions of the facility registry is facilitate a mapping of the different IDs
@@ -67,8 +72,10 @@ Geolocation
 Geolocation represented by latitude and longitude cooridinates in decimal degrees.
 
 ::
-  geopoint: [-1.6917, 29.5250]
-  
+
+  coordinates: [-1.6917, 29.5250]
+
+
 Created At
 ~~~~~~~~~~
 

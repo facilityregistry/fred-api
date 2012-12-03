@@ -120,6 +120,8 @@ Versioning
 The major version must be exposed in the URL.  Note: the URL pattern may vary by implementation.
 
 ::
+
+
   /api/v1/facilities
 
 All prior versions still supported by the code should be exposed by its own URL.
@@ -232,30 +234,6 @@ Results return a meta block of summary resultset data to make client application
     },
 
 
-Pagination
-~~~~~~~~~~
-
-::
- 
-  /api/features.json?limit=25&offset=50
-
-- **limit**: the amount of records to return in a result
-- **offset**: the offset of the search result.  Facilitates pagination
-- **paging=false**: turns paginiation off
-
-
-Sorting
-~~~~~~~
-::
-
-  /facilities.json?sortAsc=beds&sortDesc=nurses
-
-Sorts the results by property.  
-
-.. Note::
- 
-   - Each field type needs to define what ascending/descending means.
-   - Sorting precedence is left to right (first by beds then by nurses in the example above) - closest to the “?”
 
 Filter by Active status
 ~~~~~~~~~~~~~~~~~~~~~~~

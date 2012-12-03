@@ -22,6 +22,7 @@ Name of the facility.
 
   name: "Kakamega HC"
 
+
 System Id
 ~~~~~~~~~
 
@@ -78,6 +79,14 @@ Geolocation represented by latitude and longitude cooridinates in decimal degree
 
   coordinates: [-1.6917, 29.5250]
 
+Active
+~~~~~~
+
+Active = True/False indicates whether the facility is active or not.
+
+::
+
+  active: TRUE
 
 Created At
 ~~~~~~~~~~
@@ -92,19 +101,51 @@ Updated At
 ::
   updated_at: "2011-11-16T14:26:15Z"
 
-
-Active
-~~~~~~
-
-Active = True/False indicates whether the facility is active or not.
-
-::
-
-  active: "True"
-
 Implementation Specific Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Implemenation specific custom properties are to be included in the **properties** block.
+
+The property types that are supported are:
+
+- Text
+- Integer
+- Decimal
+- Boolean (TRUE/FALSE)
+- Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601/>`_ format. eg) 2012-12-25
+- Select (select one or select many)
+
+Select is represented by an array containing the selected options.
+
+::
+
+  services: ["XR","OBG","TR"],
+
+**Sample properties**
+
+.. code-block:: javascript
+
+  "properties": {
+      "num_beds": 55,
+      "services": ["XR","OBG","TR"],
+      "manager": "Mrs. Liz"
+      "has_maternity": TRUE,
+  },
+
+
+**Property field specification expectations**
+
+- For each property field, the implementer specifies a **stable** code that should not be changed once defined.  The implementation should warn the user when 
+- The property field code should consist only of letters and number and not any special characters, spaces or punctuation to allow them to represent a good xml element.  The API does not specify whether to define properties using *camelCasing* or *lower_case*, however, we encourage the implementation to be consistent in their formating.
+- Each property field should be unique
+- Specific properties for attachments and images are not supported in this version.  It is possible to use a text string to represent a file path but that is implementation specific
+
+.. Note::
+ 
+  Future releases will support: 
+
+  - linking to an external data dictionary that defines the property schema for the facility
+  - linking to external entities and references to other facilities
 
 API
 ---

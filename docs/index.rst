@@ -19,7 +19,7 @@ API Specifification
    :maxdepth: 2
 
    api_specifications
-
+   future_features
 
 
 Indices and tables

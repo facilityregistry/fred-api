@@ -1,15 +1,18 @@
 {
     "facilities": {
         "facility": {
-            "url": "http://facilityregistry.org/api/facilities/0X9OCW3JMV98EYOVN32SGN4II.json",
-            "facility_id": "0X9OCW3JMV98EYOVN32SGN4II",
-            "name": "Ruhiira HC",
-            "active": "yes",
+	    "name": "Kakamega HC",
+            "url: "http://facilityregistry.org/api/v1/facilities/0X9OCW3JMV98EYOVN32SGN4II",
+            "id": "0X9OCW3JMV98EYOVN32SGN4II",
+            "active": "True",
             "created_at": "2011-11-16T14:26:15Z",
             "updated_at": "2011-11-16T14:26:15Z",
-            "date_closed": "2011-12-20 15:09:47",
-            "geo:lat": "-1.69172",
-            "geo:long": "29.52505",
+            "coordinates": [-1.6917, 29.5250],
+	    "identifiers": [
+                {agency: "MOH", context: "DHIS", id: "123"},
+        	{agency: "UNICEF", context: "mtrac", id: "53adf"},
+        	{ .... }
+  	    ], 
             "properties": {
                 "number_beds": "10",
                 "medical_officer": "Dr. Mukombo"

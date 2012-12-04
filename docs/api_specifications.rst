@@ -276,7 +276,7 @@ Filter facilities that are active or not.  Supported parameters = true, false
 
 ::
 
-  /facilities.json?active=true/lalse
+  /facilities.json?active=true/false
 
 Filter by Updated Since
 ~~~~~~~~~~~~~~~~~~~~~~~

@@ -14,6 +14,21 @@ Core Properties
 
 Add support for open_date and closed_date?
 
+**Meta Summary Data** *(optional)*
+
+Results return a meta block of summary resultset data to make client application development easier.  This is an *optional* feature to the core API.
+
+:: 
+`
+   meta: {
+        limit: 2,
+        next: null,
+        offset: 0,
+        previous: null,
+        total_count: 29
+    },
+
+
 Pagination
 ~~~~~~~~~~
 

@@ -266,19 +266,6 @@ Returns the list of facilities in json.
 
 Whether to return all facility properties or just the core properties in the result set.  Default just returns core.
 
-**Meta Summary Data** *(optional)*
-
-Results return a meta block of summary resultset data to make client application development easier.  This is an *optional* feature to the core API.
-
-:: 
-
-   meta: {
-        limit: 2,
-        next: null,
-        offset: 0,
-        previous: null,
-        total_count: 29
-    },
 
 
 

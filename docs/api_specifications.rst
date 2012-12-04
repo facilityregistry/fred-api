@@ -46,7 +46,7 @@ URL link to the unique ID API resource for the facility
 
 ::
 
-  url: "http://facilityregistry.org/api/v1/facilities/0X9OCW3JMV98EYOVN32SGN4II"
+  url: "http://facilityregistry.org/api/v1/facilities/0X9OCW3JMV98EYOVN32SGN4II.json"
 
 
 External Facility Identifiers
@@ -73,31 +73,31 @@ Each external identifier consists of the following components:
 Geolocation
 ~~~~~~~~~~~
 
-Geolocation represented by latitude and longitude cooridinates in decimal degrees.
+Geolocation represented by latitude and longitude coordinates in that order.
 
 ::
 
-  coordinates: [-1.6917, 29.5250]
+  coordinates: [*lat*, *long*]
 
 Active
 ~~~~~~
 
-Active = True/False indicates whether the facility is active or not.
+Active = true/false indicates whether the facility is active or not.
 
 ::
 
-  active: TRUE
+  active: true
 
 Created At
 ~~~~~~~~~~
 
-`ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601/>`_ timestamp of when the facility was created.
+`ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ timestamp, including timezone, of when the facility was created.
 ::
   created_at: "2011-11-16T14:26:15Z"
 
 Updated At
 ~~~~~~~~~~
-`ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601/>`_ timestamp of when the facility was last updated.
+`ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ timestamp, including timezone, of when the facility was last updated.
 ::
   updated_at: "2011-11-16T14:26:15Z"
 
@@ -111,8 +111,8 @@ The property types that are supported are:
 - Text
 - Integer
 - Decimal
-- Boolean (TRUE/FALSE)
-- Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601/>`_ format. eg) 2012-12-25
+- Boolean (true/false)
+- Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format. eg) 2012-12-25
 - Select (select one or select many)
 
 Select is represented by an array containing the selected options.
@@ -129,7 +129,7 @@ Select is represented by an array containing the selected options.
       "num_beds": 55,
       "services": ["XR","OBG","TR"],
       "manager": "Mrs. Liz"
-      "has_maternity": TRUE,
+      "has_maternity": true,
   },
 
 
@@ -223,7 +223,7 @@ If a duplicate is dedicated (up to the implementation) a **409** is returned
 
 ::
 
-  /facilities/<id>
+  /facilities/<id>.json
 
 **POST**:: Error, not supported
 
@@ -282,20 +282,20 @@ Results return a meta block of summary resultset data to make client application
 Filter by Active status
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Filter facilities that are active or not.  Supported parameters = True, False
+Filter facilities that are active or not.  Supported parameters = true, false
 
 ::
 
-  /facilities.json?active=True/False
+  /facilities.json?active=true/lalse
 
 Filter by Updated Since
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Returns facilities updated since a particular data expressed in the `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601/>`_ format.
+Returns facilities updated since a particular data expressed in the `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format.
 
 ::
 
-  /facilities.json?updated_since=2012-03-23
+  /facilities.json?updated_since=2011-11-16T00:00:00Z"
 
 
 

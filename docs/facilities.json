@@ -4,9 +4,9 @@
             "name": "Kakamega HC",
             "url": "http: //facilityregistry.org/api/v1/facilities/0X9OCW3JMV98EYOVN32SGN4II",
             "id": "0X9OCW3JMV98EYOVN32SGN4II",
-            "active": TRUE,
-            "created_at": "2011-11-16T14: 26: 15Z",
-            "updated_at": "2011-11-16T14: 26: 15Z",
+            "active": true,
+            "created_at": "2011-11-16T14:26:15Z",
+            "updated_at": "2011-11-16T14:26:15Z",
             "coordinates": [
                 -1.6917,
                 29.525
@@ -27,7 +27,7 @@
       	        "num_beds": 55,
       	        "services": ["XR","OBG","TR"],
       	        "manager": "Mrs. Liz"
-      	        "has_maternity": TRUE,
+      	        "has_maternity": true,
                 "medical_officer": "Dr.Mukombo"
             }
         }

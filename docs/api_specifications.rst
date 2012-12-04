@@ -199,7 +199,7 @@ Optional Verbose Error messages
 
   { 
     “message”: “human readable error message”,
-    “more_info” : “http://api.facilityregistry.org/errors/12345}
+    “more_info” : “http://api.facilityregistry.org/errors/12345"
   }
 
 Adding / Updating Facilities
@@ -285,7 +285,7 @@ Returns facilities updated since a particular data expressed in the `ISO 8601 <h
 
 ::
 
-  /facilities.json?updated_since=2011-11-16T00:00:00Z"
+  /facilities.json?updated_since=2011-11-16T00:00:00Z
 
 
 

@@ -7,7 +7,7 @@ Specification Notes
 -------------------
 
 - The initial API implementation will support only JSON.  Once the API stabilizes, support for an XML endpoint is planned.
-- All timezones should be in the `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format and include a timezone (default UTC)
+- All dates/timestamps should be in `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ and include a timezone (default UTC)
 
 All timezones should b
 

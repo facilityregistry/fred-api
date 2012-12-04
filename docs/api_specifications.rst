@@ -77,7 +77,7 @@ Geolocation represented by latitude and longitude coordinates in that order.
 
 ::
 
-  coordinates: [*lat*, *long*]
+  coordinates: [lat, long]
 
 Active
 ~~~~~~

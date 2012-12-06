@@ -163,7 +163,7 @@ The major version must be exposed in the URL.  Note: the URL pattern may vary by
 ::
 
 
-  /api/v1/facilities
+  /api/v1/facilities.json
 
 All prior versions still supported by the code should be exposed by its own URL.
 
@@ -207,7 +207,7 @@ Adding / Updating Facilities
 
 ::
 
-  /facilities
+  /facilities.json
 
 **POST**:  Creates facility. **SUCCESS**: HTTP 200 Returns URL to the generated facility.     
 

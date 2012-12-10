@@ -6,10 +6,9 @@ Initial proposed draft specification
 Specification Notes
 -------------------
 
-- The initial API implementation will support only JSON.  Once the API stabilizes, support for an XML endpoint is planned.
+- The initial API implementation  will support only JSON.  Once the API stabilizes, support for an XML endpoint is planned.
 - All dates/timestamps should be in `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ and include a timezone (default UTC)
-
-All timezones should b
+- All field/properties should follow the camelCasing convention.
 
 Core Properties
 ---------------
@@ -76,11 +75,11 @@ Each external identifier consists of the following components:
 Geolocation
 ~~~~~~~~~~~
 
-Geolocation represented by latitude and longitude coordinates in that order.
+Geolocation represented by longitude and latitude coordinates in that order.
 
 ::
 
-  coordinates: [lat, long]
+  coordinates: [lng, lat]
 
 Active
 ~~~~~~
@@ -91,23 +90,23 @@ Active = true/false indicates whether the facility is active or not.
 
   active: true
 
-Created At
+CreatedAr
 ~~~~~~~~~~
 
 `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ timestamp, including timezone, of when the facility was created.
 ::
   created_at: "2011-11-16T14:26:15Z"
 
-Updated At
+UpdatedAt
 ~~~~~~~~~~
 `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ timestamp, including timezone, of when the facility was last updated.
 ::
-  updated_at: "2011-11-16T14:26:15Z"
+  updatedAt: "2011-11-16T14:26:15Z"
 
 Implementation Specific Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Implemenation specific custom properties are to be included in the **properties** block.
+Implementation specific custom properties are to be included in the **properties** block.  
 
 The property types that are supported are:
 
@@ -129,10 +128,10 @@ Select is represented by an array containing the selected options.
 .. code-block:: javascript
 
   "properties": {
-      "num_beds": 55,
+      "numBeds": 55,
       "services": ["XR","OBG","TR"],
       "manager": "Mrs. Liz"
-      "has_maternity": true,
+      "hasMaternity": true,
   },
 
 
@@ -142,6 +141,7 @@ Select is represented by an array containing the selected options.
 - The property field code should consist only of letters and number and not any special characters, spaces or punctuation to allow them to represent a good xml element.  The API does not specify whether to define properties using *camelCasing* or *lower_case*, however, we encourage the implementation to be consistent in their formating.
 - Each property field should be unique
 - Specific properties for attachments and images are not supported in this version.  It is possible to use a text string to represent a file path but that is implementation specific
+- Properties should follow the camelCasing naming convention
 
 .. Note::
  
@@ -199,7 +199,7 @@ Optional Verbose Error messages
 
   { 
     “message”: “human readable error message”,
-    “more_info” : “http://api.facilityregistry.org/errors/12345"
+    “moreInfo” : “http://api.facilityregistry.org/errors/12345"
   }
 
 Adding / Updating Facilities
@@ -285,7 +285,7 @@ Returns facilities updated since a particular data expressed in the `ISO 8601 <h
 
 ::
 
-  /facilities.json?updated_since=2011-11-16T00:00:00Z
+  /facilities.json?updatedSince=2011-11-16T00:00:00Z
 
 
 

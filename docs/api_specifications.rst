@@ -90,12 +90,12 @@ Active = true/false indicates whether the facility is active or not.
 
   active: true
 
-CreatedAr
+CreatedAt
 ~~~~~~~~~~
 
 `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ timestamp, including timezone, of when the facility was created.
 ::
-  created_at: "2011-11-16T14:26:15Z"
+  createdAt: "2011-11-16T14:26:15Z"
 
 UpdatedAt
 ~~~~~~~~~~

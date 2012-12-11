@@ -211,7 +211,7 @@ Adding / Updating Facilities
 
 **POST**:  Creates facility. **SUCCESS**: HTTP 200 Returns URL to the generated facility.     
 
-If a duplicate is dedicated (up to the implementation) a **409** is returned
+If a duplicate is detected (up to the implementation) a **409** is returned
 
 
 .. Note::

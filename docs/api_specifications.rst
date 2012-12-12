@@ -258,15 +258,23 @@ List Facilities
 
 Returns the list of facilities in json.
 
-**Properties**
+**allProperties**
+
+allProperties is a boolean field (default true) that defines that all the core properties plus the user defined properties in the properties block should be returned.   
 
 ::
 
-  /facilities.json?properties=all
+  /facilities.json?allProperties=true
 
-Whether to return all facility properties or just the core properties in the result set.  Default just returns core.
+This would return all the properties (core + specified)
 
+**Defining Partial Response with fields**
 
+::
+
+  /facilities.json?fields=name,id,numBeds
+
+This would return just the specified properties of name, id and numBeds in a partial response. This is very helpful in optimizing performance in bandwidth constrained settings.
 
 
 Filter by Active status

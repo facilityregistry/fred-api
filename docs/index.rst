@@ -12,8 +12,8 @@ The **Facility Registry API** is an attempt to create a common standard for the 
    :maxdepth: 2
 
 
-API Specifification
--------------------
+API Specification
+-----------------
 
 .. toctree::
    :maxdepth: 2

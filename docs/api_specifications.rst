@@ -276,7 +276,6 @@ This would return all the properties (core + specified)
 
 This would return just the specified properties of name, id and numBeds in a partial response. This is very helpful in optimizing performance in bandwidth constrained settings.
 
-
 Filter by Active status
 ~~~~~~~~~~~~~~~~~~~~~~~
 

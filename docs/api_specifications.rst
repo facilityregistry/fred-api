@@ -137,7 +137,7 @@ Select is represented by an array containing the selected options.
 
 **Property field specification expectations**
 
-- For each property field, the implementer specifies a **stable** code that should not be changed once defined.  The implementation should warn the user when 
+- For each property field, the implementer specifies a **stable** code that should not be changed once defined.  The implementation should warn the user if they attempt to modify the code. 
 - The property field code should consist only of letters and number and not any special characters, spaces or punctuation to allow them to represent a good xml element.  The API does not specify whether to define properties using *camelCasing* or *lower_case*, however, we encourage the implementation to be consistent in their formating.
 - Each property field should be unique
 - Specific properties for attachments and images are not supported in this version.  It is possible to use a text string to represent a file path but that is implementation specific

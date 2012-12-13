@@ -272,9 +272,9 @@ This would return all the properties (core + specified)
 
 ::
 
-  /facilities.json?fields=name,id,numBeds
+  /facilities.json?fields=name,id,properties:numBeds
 
-This would return just the specified properties of name, id and numBeds in a partial response. This is very helpful in optimizing performance in bandwidth constrained settings.
+This would return just the specified properties of name, id and numBeds (in the properties sub-object) in a partial response. This is very helpful in optimizing performance in bandwidth constrained settings. All properties in the facility registry are accessible by this method including the core properties and those in the property sub-object.
 
 Filter by Active status
 ~~~~~~~~~~~~~~~~~~~~~~~

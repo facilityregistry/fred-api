@@ -114,7 +114,7 @@ The property types that are supported are:
 - Integer
 - Decimal
 - Boolean (true/false)
-- Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format. eg) 2012-12-25
+- Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format. eg) 2012-12-16T18:22:20Z
 - Select (select one or select many)
 
 Select is represented by an array containing the selected options.

@@ -110,9 +110,9 @@ The property types that are supported are:
 - Boolean (true/false)
 - Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format. eg) 2012-12-16T18:22:20Z
 - Lists
--- When representing a single select question: should return the scalar that is the code of the selected value. 
--- When representing a multiple-select question: should return the codes of the selected values.  eg) fruits: ["apples","oranges","bananas"]
--- Can contain complex objects.
+ - When representing a single select question: should return the scalar that is the code of the selected value.  
+ - When representing a multiple-select question: should return the codes of the selected values.  eg) fruits: ["apples","oranges","bananas"]
+ - Can contain complex objects.
 ::
 
   "equipment": [{ "id": 542, "name": "Microscope" }, {"id": 942, "name": "Vaccine Fridge"}]

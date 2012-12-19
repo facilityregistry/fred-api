@@ -26,6 +26,7 @@
 	    "properties": {
       	        "numBeds": 55,
       	        "services": ["XR","OBG","TR"],
+		"equipment": [{ "id": 542, "name": "Microscope" }, {"id": 942, "name": "Vaccine Fridge"}]
       	        "manager": "Mrs. Liz"
       	        "hasMaternity": true,
                 "medicalOfficer": "Dr.Mukombo"

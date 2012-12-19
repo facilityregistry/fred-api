@@ -109,11 +109,14 @@ The property types that are supported are:
 - Decimal
 - Boolean (true/false)
 - Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format. eg) 2012-12-16T18:22:20Z
-- List (acts like a select one or select many)
-
+- Lists
+-- When representing a single select question: should return the scalar that is the code of the selected value. 
+-- When representing a multiple-select question: should return the codes of the selected values.  eg) fruits: ["apples","oranges","bananas"]
+-- Can contain complex objects.
 ::
 
-  services: ["XR","OBG","TR"],
+  "equipment": [{ "id": 542, "name": "Microscope" }, {"id": 942, "name": "Vaccine Fridge"}]
+
 
 **Sample properties**
 
@@ -122,6 +125,7 @@ The property types that are supported are:
   "properties": {
       "numBeds": 55,
       "services": ["XR","OBG","TR"],
+      "equipment": [{ "id": 542, "name": "Microscope" }, {"id": 942, "name": "Vaccine Fridge"}]
       "manager": "Mrs. Liz"
       "hasMaternity": true,
   },

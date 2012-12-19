@@ -116,9 +116,7 @@ The property types that are supported are:
 - Decimal
 - Boolean (true/false)
 - Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format. eg) 2012-12-16T18:22:20Z
-- Select (select one or select many)
-
-Select is represented by an array containing the selected options.
+- List (acts like a select one or select many)
 
 ::
 
@@ -297,7 +295,7 @@ Returns facilities updated since a particular data expressed in the `ISO 8601 <h
 
 
 
-Sample JSON Output
+Sample JSON Output (UTF-8 encoded)
 ~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: facilities.json

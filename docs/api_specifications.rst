@@ -35,8 +35,6 @@ The internal system uid is denoted with "id".  The id most be universally unique
 
   id: '0X9OCW3JMV98EYOVN32SGN4II'
 
-Must:
-
 Note: the API does not providing a specific format for IDs.  That is left up to the implementation.
 
 URL

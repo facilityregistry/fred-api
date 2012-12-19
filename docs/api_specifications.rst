@@ -29,16 +29,13 @@ Name of the facility.
 System Id
 ~~~~~~~~~
 
-Internal system identifier denoted with "uid"
+The internal system uid is denoted with "id".  The id most be universally unique.
 
 ::
 
   id: '0X9OCW3JMV98EYOVN32SGN4II'
 
 Must:
-
-- The system will generate a unique system id when generating a facility
-- The system will not return the same system id twice when creating two facilities
 
 Note: the API does not providing a specific format for IDs.  That is left up to the implementation.
 

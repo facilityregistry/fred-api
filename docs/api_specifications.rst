@@ -1,8 +1,6 @@
 API Specifications v1.0
 =======================
 
-Initial proposed draft specification
-
 Specification Notes
 -------------------
 

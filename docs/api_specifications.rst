@@ -6,10 +6,10 @@ Initial proposed draft specification
 Specification Notes
 -------------------
 
-- The initial API implementation  will support only JSON.  Once the API stabilizes, support for an XML endpoint is planned.
-- All dates/timestamps should be in `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ and include a timezone (default UTC)
+- This document defines an API which uses `JSON <http://www.json.org>`_ for exchanging data.
+- All dates should follow `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_.
 - All field/properties should follow the camelCasing convention.
-- Use UTF-8 encoding
+- Use UTF-8 encoding.
 
 Core Properties
 ---------------
@@ -29,7 +29,7 @@ Name of the facility.
 System Id
 ~~~~~~~~~
 
-Internal system identifier denoted with "id"
+Internal system identifier denoted with "uid"
 
 ::
 

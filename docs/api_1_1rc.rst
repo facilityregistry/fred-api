@@ -251,7 +251,7 @@ Individual Facility Lookup
 
 Returns facility in JSON
 
-List Facilities
+Get Facilities
 ~~~~~~~~~~~~~~~
 ::
 
@@ -259,18 +259,22 @@ List Facilities
 
 Returns the list of facilities in json.
 
-
 **Sorting**
 
-    /facilities.json?sortAsc=beds&sortDesc=nurses
+::
+  
+  /facilities.json?sortAsc=beds&sortDesc=nurses
 
-Sorts the results by property.  
+Sorting precedence from left to right. 
 
-.. Note:: 
- * Each field type needs to define what ascending/descending means.
- * Sorting precedence is left to right (first by beds then by nurses in the example above) - closest to the “?”
+**Pagination**
 
+::
 
+  /facilities.json?limit=25&offset=50
+
+* Limit: the amount of records to return in a result. Default: Offset=25
+* Offset: the offset of the search result. Default: Offset=0
 
 **allProperties**
 
@@ -290,8 +294,20 @@ This would return all the properties (core + specified)
 
 This would return just the specified properties of name, id and numBeds (in the properties sub-object) in a partial response. This is very helpful in optimizing performance in bandwidth constrained settings. All properties in the facility registry are accessible by this method including the core properties and those in the property sub-object.
 
-Filter by Active status
-~~~~~~~~~~~~~~~~~~~~~~~
+Filtering Facilities
+~~~~~~~~~~~~~~~~~~~~
+
+::
+
+  /facilities.json?property1=value&property2=value
+
+Notes on filtering:
+* Properties apply to all core and user defined facility properties and the name must match exactly
+* Exact matches only on the results
+* One value per instance of parameter
+* Instances of the same parameter are OR and different are AND
+
+**Filter by Active status**
 
 Filter facilities that are active or not.  Supported parameters = true, false
 
@@ -299,8 +315,7 @@ Filter facilities that are active or not.  Supported parameters = true, false
 
   /facilities.json?active=true/false
 
-Filter by Updated Since
-~~~~~~~~~~~~~~~~~~~~~~~
+**Filter by Updated Since**
 
 Returns facilities updated since a particular data expressed in the `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format.
 

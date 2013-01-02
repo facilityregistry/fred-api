@@ -1,4 +1,4 @@
-API Specifications v1.0
+API Specifications v1.1
 =======================
 
 Specification Notes

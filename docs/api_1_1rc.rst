@@ -97,22 +97,21 @@ UpdatedAt
 ::
   updatedAt: "2011-11-16T14:26:15Z"
 
-Implementation Specific Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Extended Properties
+~~~~~~~~~~~~~~~~~~~
 
-Implementation specific custom properties are to be included in the **properties** block.  
+Extended properties are implementation specific properties in the **properties** block.  
 
 The property types that are supported are:
 
-- Text
-- Integer
-- Decimal
-- Boolean (true/false)
-- Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format. eg) 2012-12-16T18:22:20Z
-- Lists
- - When representing a single select question: should return the scalar that is the code of the selected value.  
- - When representing a multiple-select question: should return the codes of the selected values.  eg) fruits: ["apples","oranges","bananas"]
- - Can contain complex objects.
+* String – A series of textual characters
+* Integer – A whole number
+* Decimal
+* Boolean – A true or false value
+* Date: `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_ format. eg) 2012-12-16T18:22:20Z
+* Lists - A list of one of the following data types
+  * Simple data types such as the code mnemonic of selected value(s) (example: “apple”,”orange”)
+  * Implementation specific complex data
 
 **Sample properties**
 
@@ -157,12 +156,13 @@ API
 Versioning
 ~~~~~~~~~~
 
-`Semantic versioning <http://semver.org/>`_.  (X.Y.Z) where X is the major version, Y the minor and Z the patch version.  Minor version Y must be incremented if a new backwards compatible functionality is introduced to the API.  A major version X must be incremented if any backwards incompatible changes are introduced to the public API.
+All FRED API specifications published by the FRED team are assigned a unique version number in the format MAJOR.MINOR.REVISION. These version numbers follow a `aemantic versioning <http://semver.org/>`_ pattern whereby:
 
-The major version must be exposed in the URL.  Note: the URL pattern may vary by implementation.
+1.REVISION is incremented for revisions to a MINOR version. These changes represent nonfunctional changes to the API.
+2.MINOR version numbers are incremented when new functionality is introduced which is backwards compatible with existing functionality in the MAJOR version. MINOR versions numbers are semantically compatible with previous MINOR versions.
+3.MAJOR version numbers are incremented when new functionality is introduced which is semantically incompatible with previous versions. 
 
 ::
-
 
   /api/v1/facilities.json
 
@@ -178,13 +178,27 @@ In the future, support for `HTTP Digest Authentication <http://en.wikipedia.org/
 HTTP Responses
 ~~~~~~~~~~~~~~
 
-- Success: HTTP 200, XML/JSON representation of object (when applicable)
-- Invalid: HTTP 422, XML/JSON representation of errors
+- Success: HTTP 200
+- Invalid: HTTP 422
 - Unauthorized:  HTTP 401
 - Missing: HTTP 404
 - Forbidden: HTTP 403
 - Method not Allowed: HTTP 405 
 - Conflict: HTTP 409
+
+
+Code Name Opt Scope Trigger
+- 200 OK RAllIndicates that the specified action was successfully completed. A 200 response indicates that the registry did successfully perform the operation and the response contains the final result of the action.
+- 401 UnauthorizedRAllRaised when the client attempts to perform an operation against a resource which requires authorization. This error code indicates a challenge for client credentials.
+- 403 ForbiddenRAllIndicates that the client does not have the necessary permission to perform the specified operation against the requested resource.
+- 404 Not FoundRGETIndicates that a resource was not found or is not available.
+- 405 Not AllowedRAllIndicates that the requested operation is not allowed on the current resource (for example: DELETE on a collection)
+- 409 ConflictRPOSTIndicates that the facility registry has detected a conflict in the operation and has refused to perform the operation.
+- 410 GoneOGETIndicates that a resource did exist but has been permanently removed. 
+- 415 Unsupported Media Type O POST, PUTIndicates that the content supplied in the request is not supported by the facility registry. 
+- 42 2InvalidRPOST, PUT Indicates that the request is not well-formed, is missing data, or is semantically invalid and could not be processed by the facility registry.
+- 500 Internal Server ErrorRAllIndicates that the server encountered an error while attempting to execute the desired action.
+
 
 Error Messages
 ~~~~~~~~~~~~~~
@@ -299,13 +313,15 @@ Filtering Facilities
 
 ::
 
-  /facilities.json?property1=value&property2=value
+  /facilities.json?propertyName=filterValue
 
-Notes on filtering:
-* Properties apply to all core and user defined facility properties and the name must match exactly
-* Exact matches only on the results
-* One value per instance of parameter
-* Instances of the same parameter are OR and different are AND
+
+Query parameters MUST be passed as one value per parameter. Query parameters MUST map to core properties with the same name. Query parameter values MUST be URL encoded when sent to the facility registry service.
+
+Implementers MAY choose to extend the available query parameters made available to consumers. When extended query parameters are implemented, they MUST be implemented such that:
+* The name of the query parameter MUST exactly match the name of a property the parameter filters, and
+* Repetitions of the same named parameter MUST be considered an OR operation. For example, if a facility registry supports filtering on creation date then a filter for all facilities created in January or February of 2012 would be represented as: “?createdAt=2012-01&createdAt=2012-02”, and
+* Implementers MUST declare which extended query parameters they expose. 
 
 **Filter by Active status**
 

@@ -97,10 +97,10 @@ UpdatedAt
 ::
   updatedAt: "2011-11-16T14:26:15Z"
 
-Implementation Specific Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Extended Properties
+~~~~~~~~~~~~~~~~~~~
 
-Implementation specific custom properties are to be included in the **properties** block.  
+Extended properties are implementation specific properties in the **properties** block.  
 
 The property types that are supported are:
 
@@ -243,6 +243,11 @@ Once the record is deleted, the facility registry SHALL return an HTTP 200 respo
 
 **PUT**: Update facility if exists, if not error.  Success: HTTP 200, JSON collection
 
+
+Query Facility Data
+~~~~~~~~~~~~~~~~~~~
+
+
 Individual Facility Lookup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 ::
@@ -277,6 +282,8 @@ This would return all the properties (core + specified)
 
 This would return just the specified properties of name, id and numBeds (in the properties sub-object) in a partial response. This is very helpful in optimizing performance in bandwidth constrained settings. All properties in the facility registry are accessible by this method including the core properties and those in the property sub-object.
 
+
+
 Filter by Active status
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -297,7 +304,7 @@ Returns facilities updated since a particular data expressed in the `ISO 8601 <h
 
 
 
-Sample JSON Output (UTF-8 encoded)
+Sample JSON Output
 ~~~~~~~~~~~~~~~~~~
 
 .. literalinclude:: facilities.json

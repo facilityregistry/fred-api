@@ -150,8 +150,8 @@ The property types that are supported are:
   - linking to an external data dictionary that defines the property schema for the facility
   - linking to external entities and references to other facilities
 
-API
----
+REST API
+--------
 
 Versioning
 ~~~~~~~~~~

@@ -166,6 +166,7 @@ In the future, support for `HTTP Digest Authentication <http://en.wikipedia.org/
 HTTP Responses
 ~~~~~~~~~~~~~~
 - **200 OK** - All Indicates that the specified action was successfully completed. A 200 response indicates that the registry did successfully perform the operation and the response contains the final result of the action.
+- **201 Created** -  Indicates that a request was successful and as a result, a resource has been created
 - **401 Unauthorized** - Raised when the client attempts to perform an operation against a resource which requires authorization. This error code indicates a challenge for client credentials.
 - **403 Forbidden** - Indicates that the client does not have the necessary permission to perform the specified operation against the requested resource.
 - **404 Not Found** - Indicates that a resource was not found or is not available.
@@ -192,7 +193,7 @@ Optional Verbose Error messages
 
   { 
     “message”: “human readable error message”,
-    “moreInfo” : “http://api.facilityregistry.org/errors/12345"
+    “moreInfo” : “http://api.facilityreOBgistry.org/errors/12345"
   }
 
 REST Resources
@@ -291,7 +292,7 @@ Create a Facility
   POST /facilities.json
  
 
-**200 OK**. Returns URL to the generated facility.     
+**201 Created** - Header location set to the url of the new resource
 
   If a duplicate is detected (up to the implementation) a **409** is returned
 

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos# targetNamespace="http://facilityregistry.org/api/v1" xmlns="http://facilityregistry.org/api/v1" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://facilityregistry.org/api/v1" xmlns="http://facilityregistry.org/api/v1" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos" elementFormDefault="qualified">
 	<xs:complexType name="identifier">
 		<xs:all >
 			<xs:element name="agency" type="xs:string"/>
@@ -16,14 +16,14 @@
 
 	<xs:complexType name="coordinates">
 		<xs:all>
-			<xs:element name="lat" type="geo:lat"/>
-			<xs:element name="lng" type="geo:long"/>
+			<xs:element name="lat" type="xs:decimal"/>
+			<xs:element name="lng" type="xs:decimal"/>
 		</xs:all>
 	</xs:complexType>
 
 	<xs:complexType name="properties">
 		<xs:sequence>
-			<xs:any minOccurs="0" maxOccurs="unbounded" processContents="Lax" />		
+			<xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" />		
 		</xs:sequence>
 	</xs:complexType>
 

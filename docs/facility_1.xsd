@@ -36,7 +36,7 @@
 			<xs:element name="coordinates" type="coordinates" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="active" type="xs:boolean"/>
 			<xs:element name="createdAt" type="xs:dateTime" minOccurs="1" maxOccurs="unbounded" />
-			<xs:element name="updatedAt" type="xs:dateTime minOccurs="1" maxOccurs="unbounded""/>
+			<xs:element name="updatedAt" type="xs:dateTime" minOccurs="1" maxOccurs="unbounded""/>
 			<xs:element name="properties" type="properties" minOccurs="0" maxOccurs="1"/>
 		</xs:all>
 	</xs:complexType>

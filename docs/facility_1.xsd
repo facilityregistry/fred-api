@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://facilityregistry.org/api/v1" xmlns="http://facilityregistry.org/api/v1" elementFormDefault="qualified">
+  <xs:complexType name="identifier">
+		<xs:all>
+			<xs:element name="agency" type="xs:string"/>
+			<xs:element name="context" type="xs:string"/>
+			<xs:element name="id" type="xs:string"/>
+		</xs:all>
+	</xs:complexType>
+
+	<xs:complexType name="identifiers">
+		<xs:sequence>
+			<xs:element name="identifier" type="identifier" minOccurs="0" maxOccurs="unbounded" />		
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="coordinates">
+		<xs:all>
+			<xs:element name="lat" type="xs:decimal"/>
+			<xs:element name="lng" type="xs:decimal"/>
+		</xs:all>
+	</xs:complexType>
+
+	<xs:complexType name="properties">
+		<xs:sequence>
+			<xs:any minOccurs="0" maxOccurs="unbounded" processContents="Lax" />		
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="facility">
+		<xs:all>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="uuid" type="xs:string"/>
+			<xs:element name="href" type="xs:anyURI"/>
+			<xs:element name="identifiers" type="identifiers"/>
+			<xs:element name="coordinates" type="coordinates" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="active" type="xs:boolean"/>
+			<xs:element name="createdAt" type="xs:dateTime" minOccurs="1" maxOccurs="unbounded" />
+			<xs:element name="updatedAt" type="xs:dateTime minOccurs="1" maxOccurs="unbounded""/>
+			<xs:element name="properties" type="properties" minOccurs="0" maxOccurs="1"/>
+		</xs:all>
+	</xs:complexType>
+
+	<xs:complexType name="facilities">
+		<xs:sequence>
+			<xs:element name="facility" type="facility" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="facilities" type="facilities"/>
+</xs:schema>

@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<facilities xmlns="http://facilityregistry.org/api/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://facilityregistry.org/api/v1 fred.xsd">
+<facilities xmlns="http://facilityregistry.org/api/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://facilityregistry.org/api/v1 fred.xsd" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos">
   <facility>
     <name>Kakamega HC</name>
-  	<href>http://facilityregistry.org/api/v1/facilities/53adf.json</href>
+    <href>http://facilityregistry.org/api/v1/facilities/53adf.xml</href>
   	<uuid>550e8400-e29b-41d4-a716-446655440000</uuid>
   	<active>true</active>
   	<createdAt>2011-11-16T14:26:15Z</createdAt>
   	<updatedAt>2011-11-16T14:26:15Z</updatedAt>
   	<coordinates>
-  		<lng>29.525</lng>
-  		<lat>-1.6917</lat>  		
+  		<lat>29.525</lat>
+  		<lng>-1.6917</lng>  		
   	</coordinates>
   	<identifiers>
   		<identifier>

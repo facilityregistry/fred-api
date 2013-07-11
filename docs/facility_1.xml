@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<facilities xmlns="http://facilityregistry.org/api/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://facilityregistry.org/api/v1 fred.xsd">
+  <facility>
+    <name>Kakamega HC</name>
+  	<href>http://facilityregistry.org/api/v1/facilities/53adf.json</href>
+  	<uuid>550e8400-e29b-41d4-a716-446655440000</uuid>
+  	<active>true</active>
+  	<createdAt>2011-11-16T14:26:15Z</createdAt>
+  	<updatedAt>2011-11-16T14:26:15Z</updatedAt>
+  	<coordinates>
+  		<lng>29.525</lng>
+  		<lat>-1.6917</lat>  		
+  	</coordinates>
+  	<identifiers>
+  		<identifier>
+  			<agency>MOH</agency>
+  			<context>DHIS</context>
+  			<id>123</id>
+  		</identifier>
+  		<identifier>
+  			<agency>UNICEF</agency>
+  			<context>mtrac</context>
+  			<id>53adf</id>
+  		</identifier>
+  	</identifiers>
+  	<properties>
+  		<numBeds>55</numBeds>
+  		<services>
+  			<service>XR</service>
+  			<service>OBG</service>
+  			<service>TR</service>
+  		</services>
+  		<equipment>
+  			<equipmentItem>
+  				<id>542</id>
+  				<name>Microscope</name>
+  			</equipmentItem>	
+  			<equipmentItem>
+  				<id>942</id>
+  				<name>Vaccine Fridge</name>
+  			</equipmentItem>
+  		</equipment>
+  		<manager>Mrs. Liz</manager>
+  		<hasMaternity>true</hasMaternity>
+  		<medicalOfficer>Dr. Mukombo</medicalOfficer>
+  	</properties>
+  </facility>
+</facilities>

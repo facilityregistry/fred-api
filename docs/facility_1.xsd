@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://facilityregistry.org/api/v1" xmlns="http://facilityregistry.org/api/v1" elementFormDefault="qualified">
-  <xs:complexType name="identifier">
-		<xs:all>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos# targetNamespace="http://facilityregistry.org/api/v1" xmlns="http://facilityregistry.org/api/v1" elementFormDefault="qualified">
+	<xs:complexType name="identifier">
+		<xs:all >
 			<xs:element name="agency" type="xs:string"/>
 			<xs:element name="context" type="xs:string"/>
 			<xs:element name="id" type="xs:string"/>
@@ -16,8 +16,8 @@
 
 	<xs:complexType name="coordinates">
 		<xs:all>
-			<xs:element name="lat" type="xs:decimal"/>
-			<xs:element name="lng" type="xs:decimal"/>
+			<xs:element name="lat" type="geo:lat"/>
+			<xs:element name="lng" type="geo:long"/>
 		</xs:all>
 	</xs:complexType>
 
@@ -28,16 +28,16 @@
 	</xs:complexType>
 
 	<xs:complexType name="facility">
-		<xs:all>
-			<xs:element name="name" type="xs:string"/>
-			<xs:element name="uuid" type="xs:string"/>
+		<xs:all minOccurs="1">
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="uuid" type="xs:string" />
 			<xs:element name="href" type="xs:anyURI"/>
-			<xs:element name="identifiers" type="identifiers"/>
-			<xs:element name="coordinates" type="coordinates" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="identifiers" type="identifiers" />
+			<xs:element name="coordinates" type="coordinates" minOccurs="0" />
 			<xs:element name="active" type="xs:boolean"/>
-			<xs:element name="createdAt" type="xs:dateTime" minOccurs="1" maxOccurs="unbounded" />
-			<xs:element name="updatedAt" type="xs:dateTime" minOccurs="1" maxOccurs="unbounded""/>
-			<xs:element name="properties" type="properties" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="createdAt" type="xs:dateTime"/>
+			<xs:element name="updatedAt" type="xs:dateTime"/>
+			<xs:element name="properties" type="properties"/>
 		</xs:all>
 	</xs:complexType>
 
